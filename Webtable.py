@@ -25,12 +25,19 @@ print(len(var))
 for i in var:
     print(i.text)
 
-#
-# col_var=driver.find_elements_by_xpath("//*[@id='123']/tbody/tr[1]/td")
-# col_count=len(col_var)
-# print("col count",col_count)
-#
-#
-# row_var=driver.find_elements_by_xpath("//*[@id='123']/tbody/tr")
-# row_count=len(row_var)
-# print("row count",row_count)
+
+col_var=driver.find_elements_by_xpath("//*[@id='123']/tbody/tr[1]/td")
+col_count=len(col_var)
+print("col count",col_count)
+
+
+row_var=driver.find_elements_by_xpath("//*[@id='123']/tbody/tr")
+row_count=len(row_var)
+print("row count",row_count)
+
+
+
+
+row_var=driver.find_elements_by_xpath("//*[@id='123']/tbody/tr[1]/td[3]")
+row_count=len(row_var)
+print("row count",row_count)
