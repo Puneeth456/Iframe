@@ -18,8 +18,8 @@ from selenium import webdriver
 driver=webdriver.Chrome(executable_path="C:/Users/Admin/Downloads/chromedriver.exe")
 driver.get("file:///C:/Users/Admin/Desktop/Webtabledemo.html")
 
-var=driver.find_elements_by_xpath("//*[@id='123']/tbody/tr[1]/td")
-print(var)
+var=driver.find_element_by_xpath("//*[@id='123']/tbody/tr[1]/td[1]")
+print(var.text)
 print(len(var))
 
 for i in var:
